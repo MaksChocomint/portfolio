@@ -1,0 +1,20 @@
+@import "../../animations/content_appearance.scss";
+
+.socials {
+  position: absolute;
+  left: 55px;
+  top: 35%;
+  z-index: 10;
+
+  filter: drop-shadow(0 0 3px rgb(150 117 216 / 1));
+
+  animation: content_appearance 1.5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  > img {
+    cursor: pointer;
+  }
+}

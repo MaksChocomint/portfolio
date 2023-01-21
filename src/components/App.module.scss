@@ -1,0 +1,39 @@
+.app {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 50;
+}
+
+.app_bg {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.planet {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.planet_img {
+  position: absolute;
+  height: auto;
+  width: 1200px;
+  bottom: -120vh;
+  transition: rotate 2s;
+}
+
+@media (min-height: 800px) {
+  .planet_img {
+    bottom: -90vh;
+  }
+}

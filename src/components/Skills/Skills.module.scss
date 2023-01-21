@@ -1,0 +1,112 @@
+@import url("https://fonts.cdnfonts.com/css/death-star");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@import "../../animations/bg_appearance.scss";
+@import "../../animations/content_appearance.scss";
+
+$death-star-font: "Death Star", sans-serif;
+$bebas-neue: "Bebas Neue", cursive;
+$montserrat-font: "Montserrat", sans-serif;
+
+.skills {
+  height: 100vh;
+  animation: bg_appearance 1s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public/backgrounds/background_2.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.55);
+  }
+}
+
+.skills_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: content_appearance 1.5s ease-in-out;
+
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.skills_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.skills_title_text {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ceb7ff;
+
+  filter: drop-shadow(0 0 3px rgb(150 117 216 / 1));
+
+  font-family: $death-star-font;
+  font-size: 56px;
+}
+
+.skills_title_rectangle {
+  border: 2px solid #ceb7ff;
+  box-shadow: 0px 0px 4px #ceb7ff;
+  width: 260px;
+  height: 18px;
+}
+
+.skills_list_intro {
+  color: #fff;
+  font-size: 40px;
+  font-family: $bebas-neue;
+
+  margin-top: 10px;
+
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #ceb7ff;
+}
+
+.skills_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.skill {
+  color: #fff;
+  font-family: $montserrat-font;
+  font-size: 17px;
+
+  width: 170px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #ceb7ff;
+
+  transition: 0.1s ease-in-out;
+
+  user-select: none;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}

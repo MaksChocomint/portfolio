@@ -1,0 +1,25 @@
+@import "../../animations/content_appearance.scss";
+
+.control_arrows {
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: content_appearance 1.5s ease-in-out;
+
+  width: 93%;
+}
+
+.control_arrow {
+  transition: 0.1s;
+  width: 50px;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 0 3px rgb(150 117 216 / 1));
+  }
+}
