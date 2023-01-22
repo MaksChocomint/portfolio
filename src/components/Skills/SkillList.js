@@ -10,7 +10,7 @@ const SkillList = [
   { name: "Photoshop", id: 9 },
   { name: "Experience Design", id: 10 },
   { name: "Figma", id: 11 },
-  { name: "English", id: 12 },
+  { name: "Vite", id: 12 },
 ];
 
 export default SkillList;
