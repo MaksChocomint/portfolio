@@ -26,7 +26,11 @@ const Socials = ({ currentSection }) => {
         alt="github"
         onClick={() => window.open("https:/github.com/MaksChocomint")}
       />
-      <img src={discord} alt="discord" />
+      <img
+        src={discord}
+        alt="discord"
+        onClick={() => window.open("https://discord.gg/gzDRCyMw")}
+      />
       <img
         src={vk}
         alt="vk"
