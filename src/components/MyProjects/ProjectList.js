@@ -38,7 +38,7 @@ const ProjectList = [
     name: "Real Life is RPG Extension",
     description:
       "What if your life was an RPG Game, would you be more productive and motivated? This project is an incarnation of my idea of getting motivation playing the RPG games. However, playing games gives you nothing but back pains, and anyways you have motivation to play. This app will help you to visualize your life as a game!",
-    link: "https://github.com/MaksChocomint/dairy-chrome-extension",
+    link: "https://github.com/MaksChocomint/diary-chrome-extension",
     id: 6,
   },
 ];
