@@ -29,7 +29,7 @@ const ContactSection = ({ setCurrentSection, currentSection }) => {
         </div>
         <form
           className={styles.contact_section_form}
-          action="https://formsubmit.co/makschocomint@gmail.com"
+          action="b2d0de3528265432d96e75a08ca999db"
           method="POST"
         >
           <div className={styles.contact_section_email_text}>email :</div>
