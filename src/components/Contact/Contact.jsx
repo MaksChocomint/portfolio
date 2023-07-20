@@ -1,9 +1,9 @@
 import styles from "./Contact.module.scss";
 
-const Contact = ({ setCurrentSection }) => {
+const Contact = ({ setCurrentSection, style }) => {
   return (
     <div
-      className={styles.contact}
+      className={style ? `${styles.contact} ${style}` : styles.contact}
       onClick={() => setCurrentSection("contact_section")}
     >
       contact me

@@ -25,7 +25,10 @@ const MyProjects = ({ setCurrentSection }) => {
 
   return (
     <div className={styles.my_projects}>
-      <Contact setCurrentSection={setCurrentSection} />
+      <Contact
+        setCurrentSection={setCurrentSection}
+        style={styles.contact_project}
+      />
       <OpenButton
         section="my_projects"
         projectDescription={projectDescription}

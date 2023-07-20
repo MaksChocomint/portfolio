@@ -19,3 +19,18 @@ $bebas-neue: "Bebas Neue", cursive;
 
   cursor: pointer;
 }
+
+@media (max-width: 775px) {
+  .contact {
+    font-size: 28px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    font-size: 32px;
+    right: 10px;
+    top: 40%;
+  }
+}

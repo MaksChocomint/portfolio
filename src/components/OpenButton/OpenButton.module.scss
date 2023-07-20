@@ -8,7 +8,7 @@ $montserrat-font: "Montserrat", sans-serif;
   user-select: none;
   position: absolute;
   z-index: 30;
-  bottom: 50px;
+  bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -117,9 +117,7 @@ $montserrat-font: "Montserrat", sans-serif;
     }
   }
 
-  > p {
-    width: 650px;
-  }
+  width: 650px;
 }
 
 @keyframes welcome_intro_appearance {
@@ -151,5 +149,150 @@ $montserrat-font: "Montserrat", sans-serif;
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  .welcome_btn_text {
+    font-size: 42px;
+    width: 175px;
+  }
+
+  .welcome_btn_rectangle {
+    top: -32px;
+    left: -32px;
+  }
+
+  .welcome_btn_rectangle_flipped {
+    bottom: -32px;
+    right: -32px;
+  }
+
+  .welcome_introduction {
+    width: 600px;
+  }
+
+  .welcome_introduction_text {
+    width: 500px;
+  }
+
+  @keyframes welcome_intro_appearance {
+    0% {
+      display: none;
+      width: 300px;
+      height: 50px;
+      opacity: 0;
+    }
+
+    50% {
+      display: initial;
+      opacity: 50%;
+    }
+
+    100% {
+      width: 600px;
+      height: 190px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .welcome_introduction {
+    width: 500px;
+  }
+
+  .welcome_introduction_text {
+    width: 460px;
+  }
+
+  @keyframes welcome_intro_appearance {
+    0% {
+      display: none;
+      width: 300px;
+      height: 50px;
+      opacity: 0;
+    }
+
+    50% {
+      display: initial;
+      opacity: 50%;
+    }
+
+    100% {
+      width: 500px;
+      height: 190px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome_introduction {
+    width: 400px;
+  }
+
+  .welcome_introduction_text {
+    width: 350px;
+  }
+
+  @keyframes welcome_intro_appearance {
+    0% {
+      display: none;
+      width: 300px;
+      height: 50px;
+      opacity: 0;
+    }
+
+    50% {
+      display: initial;
+      opacity: 50%;
+    }
+
+    100% {
+      width: 400px;
+      height: 190px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome_btn {
+    bottom: 20px;
+  }
+
+  .welcome_introduction {
+    width: 300px;
+    height: 160px;
+  }
+
+  .welcome_introduction_text {
+    width: 270px;
+    font-size: 12px;
+  }
+
+  .welcome_btn_rectangle {
+    display: none;
+  }
+
+  .welcome_btn_rectangle_flipped {
+    display: none;
+  }
+
+  @keyframes welcome_intro_appearance {
+    0% {
+      display: none;
+      width: 200px;
+      height: 50px;
+      opacity: 0;
+    }
+
+    50% {
+      display: initial;
+      opacity: 50%;
+    }
+
+    100% {
+      width: 300px;
+      height: 160px;
+    }
   }
 }

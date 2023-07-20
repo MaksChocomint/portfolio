@@ -144,19 +144,113 @@ $montserrat: "montserrat";
   resize: none;
 }
 
-.message_sent {
-  position: absolute;
-  z-index: 100;
+.success_message {
+  font-family: $bebas-neue;
+  background-color: rgba(124, 91, 196, 0.7);
+  filter: drop-shadow(0 0 3px rgb(109, 75, 179));
+  position: relative;
+  z-index: 205;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 30px 30px 40px;
 
-  filter: drop-shadow(0 0 3px rgb(150 117 216 / 1));
+  width: 600px;
+  height: 350px;
+  > button {
+    margin: 0;
+  }
+}
 
-  font-family: $bebas-neue;
-  color: #fff;
-  font-size: 50px;
+.success_message_text {
+  color: white;
+  font-size: 36px;
+  letter-spacing: 2px;
+  line-height: 2;
+}
 
-  animation: content_appearance 1.5s ease-in-out;
+.success_message_thank {
+  color: #ceb7ff;
+  font-size: 48px;
+}
+
+.black_back {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 650px) {
+  .contact_section_content {
+    gap: 50px;
+    margin-top: 20px;
+  }
+
+  .back {
+    top: 10px;
+    left: 10px;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    animation: content_appearance 1.5s ease-in-out;
+  }
+
+  .contact_section_title {
+    gap: 5px;
+  }
+
+  .contact_section_title_text {
+    font-size: 54px;
+  }
+
+  .contact_section_title_rectangle {
+    width: 320px;
+  }
+
+  .contact_section_form {
+    font-family: $bebas-neue;
+    font-size: 30px;
+
+    display: grid;
+    grid-template-columns: 110px;
+    column-gap: 0;
+    row-gap: 20px;
+    grid-column-start: auto;
+    align-items: start;
+
+    margin-bottom: 80px;
+
+    color: #fff;
+  }
+
+  .contact_section_submit_btn {
+    font-size: 28px;
+    margin-top: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+
+    width: 250px;
+    margin-right: 0;
+  }
+
+  .contact_section_email_input,
+  .contact_section_subject_input,
+  .contact_section_content_textarea {
+    padding: 6px 10px;
+    font-size: 18px;
+  }
+
+  .contact_section_content_textarea {
+    height: 100px;
+  }
 }

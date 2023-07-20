@@ -18,3 +18,24 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 750px) {
+  .socials {
+    top: 30px;
+    left: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .socials {
+    left: 10px;
+    top: 35%;
+  }
+}
+
+@media (max-width: 380px) {
+  .socials {
+    left: 10px;
+    top: 28%;
+  }
+}

@@ -33,3 +33,9 @@ $bebas-neue: "Bebas Neue", cursive;
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1150px) {
+  .control_buttons {
+    display: none;
+  }
+}

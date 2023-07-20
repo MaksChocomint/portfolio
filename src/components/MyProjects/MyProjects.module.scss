@@ -78,5 +78,31 @@ $bebas-neue: "Bebas Neue", cursive;
 
   margin-top: 10px;
 
+  text-align: center;
+
   -webkit-text-stroke-width: 0;
+}
+
+@media (max-width: 500px) {
+  .my_projects_title_text {
+    font-size: 55px;
+  }
+
+  .my_projects_name {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .my_projects_content {
+    gap: 20px;
+    top: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact_project {
+    top: 60%;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }

@@ -82,3 +82,60 @@ $death-star-font: "Death Star", sans-serif;
 .welcome_name {
   font-size: 46px;
 }
+
+@media (max-height: 670px) {
+  .welcome_greeting {
+    gap: 20px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-height: 640px) {
+  .welcome_greeting {
+    gap: 10px;
+    padding-top: 30px;
+  }
+
+  .welcome_message {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .welcome_message_rectangle,
+  .welcome_message_from_earth {
+    display: none;
+  }
+
+  .welcome_greeting {
+    gap: 10px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .welcome_message_hello {
+    width: 400px;
+    font-size: 48px;
+  }
+
+  .welcome_name {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome_greeting {
+    gap: 10px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .welcome_message_hello {
+    width: 400px;
+    font-size: 46px;
+  }
+
+  .welcome_name {
+    font-size: 52px;
+  }
+}

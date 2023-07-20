@@ -5,10 +5,10 @@ const SkillList = [
   { name: "CSS", id: 4 },
   { name: "Sass", id: 5 },
   { name: "Tailwind", id: 6 },
-  { name: "Material UI", id: 7 },
+  { name: "Next JS", id: 7 },
   { name: "React JS", id: 8 },
   { name: "Photoshop", id: 9 },
-  { name: "Experience Design", id: 10 },
+  { name: "Game Dev", id: 10 },
   { name: "Figma", id: 11 },
   { name: "English", id: 12 },
 ];

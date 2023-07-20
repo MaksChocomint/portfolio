@@ -23,7 +23,10 @@ const WorkExperience = ({ setCurrentSection }) => {
 
   return (
     <div className={styles.work_experience}>
-      <Contact setCurrentSection={setCurrentSection} />
+      <Contact
+        setCurrentSection={setCurrentSection}
+        style={styles.contact_work}
+      />
       <OpenButton
         section="work_experience"
         workDescription={workDescription}

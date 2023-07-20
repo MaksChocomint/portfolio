@@ -1,7 +1,7 @@
 const WorkList = [
   {
-    name: "None",
-    description: "no description 1",
+    name: "Don't want to work for any company now.",
+    description: "I prefer to do my own business",
     id: 1,
   },
   {

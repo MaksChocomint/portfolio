@@ -110,3 +110,65 @@ $montserrat-font: "Montserrat", sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
+
+@media (max-height: 670px) {
+  .skills_list_intro {
+    display: none;
+  }
+
+  .skills_content {
+    top: 50%;
+    gap: 100px;
+  }
+}
+
+@media (max-height: 620px) {
+  .skills_list {
+    gap: 6px;
+  }
+
+  .skills_content {
+    gap: 220px;
+  }
+
+  .skills_title_rectangle {
+    display: none;
+  }
+
+  .skills_title_text {
+    font-size: 50px;
+  }
+
+  .skill {
+    width: 140px;
+    height: 80px;
+  }
+}
+
+@media (max-height: 580px) {
+  .skills_title_text {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .skills_content {
+    gap: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills_list_intro {
+    display: none;
+  }
+
+  .skill {
+    width: 80px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .skills_content {
+    gap: 320px;
+  }
+}
