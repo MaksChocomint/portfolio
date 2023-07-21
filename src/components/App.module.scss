@@ -60,6 +60,11 @@
   .planet_img {
     bottom: -110vh;
   }
+
+  .app {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 400px) {
