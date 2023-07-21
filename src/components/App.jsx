@@ -40,13 +40,15 @@ const App = () => {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       /*most significant*/
-      if (xDiff > 0) {
+      if (xDiff === 50) {
         setPlanetRotation((prevPlanetRotation) => prevPlanetRotation - 90);
-      } else {
+        xDiff = 0;
+      } else if (xDiff === -50) {
         setPlanetRotation((prevPlanetRotation) => prevPlanetRotation + 90);
+        xDiff = 0;
       }
     } else {
-      if (yDiff > 0) {
+      if (yDiff > 1) {
         /* down swipe */
       } else {
         /* up swipe */
