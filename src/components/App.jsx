@@ -40,12 +40,13 @@ const App = () => {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       /*most significant*/
-      if (xDiff === 50) {
+      if (xDiff === 1) {
         setPlanetRotation((prevPlanetRotation) => prevPlanetRotation - 90);
         xDiff = 0;
-      } else if (xDiff === -50) {
+        setTimeout(() => null, 1000);
+      } else {
         setPlanetRotation((prevPlanetRotation) => prevPlanetRotation + 90);
-        xDiff = 0;
+        setTimeout(() => null, 1000);
       }
     } else {
       if (yDiff > 1) {
