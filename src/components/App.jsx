@@ -37,26 +37,32 @@ const App = () => {
 
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
+    let lastCallTime = 0;
 
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      /*most significant*/
-      if (xDiff > 0) {
-        setPlanetRotation((prevPlanetRotation) => prevPlanetRotation - 90);
-        setTimeout(() => null, 1000);
+    const currentTime = Date.now();
+
+    if (currentTime - lastCallTime >= 1000) {
+      if (Math.abs(xDiff) > Math.abs(yDiff)) {
+        /*most significant*/
+        if (xDiff > 0) {
+          setPlanetRotation((prevPlanetRotation) => prevPlanetRotation - 90);
+          setTimeout(() => null, 1000);
+        } else {
+          setPlanetRotation((prevPlanetRotation) => prevPlanetRotation + 90);
+          setTimeout(() => null, 1000);
+        }
       } else {
-        setPlanetRotation((prevPlanetRotation) => prevPlanetRotation + 90);
-        setTimeout(() => null, 1000);
+        if (yDiff > 1) {
+          /* down swipe */
+        } else {
+          /* up swipe */
+        }
       }
-    } else {
-      if (yDiff > 1) {
-        /* down swipe */
-      } else {
-        /* up swipe */
-      }
+      /* reset values */
+      xDown = null;
+      yDown = null;
+      lastCallTime = currentTime;
     }
-    /* reset values */
-    xDown = null;
-    yDown = null;
   }
 
   const [planetRotation, setPlanetRotation] = useState(0);
