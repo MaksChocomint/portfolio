@@ -8,9 +8,6 @@ import { useState, useEffect, useRef } from "react";
 import WorkExperience from "./WorkExperience/WorkExperience";
 
 const App = () => {
-  document.addEventListener("touchstart", handleTouchStart, false);
-  document.addEventListener("touchmove", handleTouchMove, false);
-
   var xDown = null;
   var yDown = null;
 
@@ -37,22 +34,18 @@ const App = () => {
 
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
-    let lastCallTime = 0;
 
-    const currentTime = Date.now();
-
-    if (currentTime - lastCallTime >= 1000) {
-      if (Math.abs(xDiff) > Math.abs(yDiff)) {
-        /*most significant*/
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (Math.abs(xDiff > 50)) {
         if (xDiff > 0) {
           setPlanetRotation((prevPlanetRotation) => prevPlanetRotation - 90);
-          setTimeout(() => null, 1000);
         } else {
           setPlanetRotation((prevPlanetRotation) => prevPlanetRotation + 90);
-          setTimeout(() => null, 1000);
         }
-      } else {
-        if (yDiff > 1) {
+      }
+    } else {
+      if (Math.abs(xDiff > 50)) {
+        if (yDiff > 0) {
           /* down swipe */
         } else {
           /* up swipe */
@@ -61,7 +54,6 @@ const App = () => {
       /* reset values */
       xDown = null;
       yDown = null;
-      lastCallTime = currentTime;
     }
   }
 
@@ -120,6 +112,12 @@ const App = () => {
   return (
     <div
       className={styles.app}
+      onTouchStart={
+        currentSection !== "contact_section" ? handleTouchStart : null
+      }
+      onTouchMove={
+        currentSection !== "contact_section" ? handleTouchMove : null
+      }
       onKeyDown={
         currentSection !== "contact_section" ? rotatePlanetOnKeyDown : null
       }
