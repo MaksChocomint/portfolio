@@ -52,9 +52,9 @@ const App = () => {
         }
       }
       /* reset values */
+      xDown = null;
+      yDown = null;
     }
-    xDown = null;
-    yDown = null;
   }
 
   const [planetRotation, setPlanetRotation] = useState(0);
