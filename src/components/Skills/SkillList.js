@@ -8,7 +8,7 @@ const SkillList = [
   { name: "Next JS", id: 7 },
   { name: "React JS", id: 8 },
   { name: "Photoshop", id: 9 },
-  { name: "Game Dev", id: 10 },
+  { name: "Database", id: 10 },
   { name: "Figma", id: 11 },
   { name: "English", id: 12 },
 ];
