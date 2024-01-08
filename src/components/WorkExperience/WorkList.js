@@ -1,7 +1,8 @@
 const WorkList = [
   {
-    name: "Don't want to work for any company now.",
-    description: "I prefer to do my own business",
+    name: "Haven't worked for any company",
+    description:
+      "I am a student and have done only own pet-projects and helped others with their projects.",
     id: 1,
   },
   {
