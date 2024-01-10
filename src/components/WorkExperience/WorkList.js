@@ -7,7 +7,7 @@ const WorkList = [
   },
   {
     name: "None",
-    description: "no description 2",
+    description: "no description",
     id: 2,
   },
 ];
