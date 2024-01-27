@@ -7,10 +7,10 @@ const ProjectList = [
     id: 1,
   },
   {
-    name: "Front-end for Diagrams app",
+    name: "Diagrams app",
     description:
-      "This site is my help in developing a site for building functional diagrams, the script for which is built under special conditions. The full version of the site is not yet available.",
-    link: "https://github.com/MaksChocomint/diagrams-front",
+      "Full-stack project for making bot-scripted diagrams. Stack: Python (FastAPI, SQLAlchemy), ReactJS.",
+    link: "https://github.com/MaksChocomint/diagrams-app",
     id: 2,
   },
   {
